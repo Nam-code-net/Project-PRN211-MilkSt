@@ -1,0 +1,96 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MilkSt.WpfApp.UI"
+        xmlns:Wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf" x:Class="MilkSt.WpfApp.UI.wViewMilk"
+        mc:Ignorable="d"
+        Title="Detail" FontSize="15" Height="450" Width="1000" Background="Beige" >
+    <Grid>
+        <!--<StackPanel>
+            <TextBlock Text="MilkId:" FontWeight="Bold"/>
+            <TextBox x:Name="MilkId" IsReadOnly="True"/>
+
+            <TextBlock Text="Name:" FontWeight="Bold"/>
+            <TextBox x:Name="Name" IsReadOnly="True"/>
+
+            <TextBlock Text="Brand:" FontWeight="Bold"/>
+            <TextBox x:Name="Brand" IsReadOnly="True"/>
+
+            <TextBlock Text="Price:" FontWeight="Bold"/>
+            <TextBox x:Name="Price" IsReadOnly="True"/>
+
+            <TextBlock Text="Discount:" FontWeight="Bold"/>
+            <TextBox x:Name="Discount" IsReadOnly="True"/>
+
+            <TextBlock Text="Description:" FontWeight="Bold"/>
+            <TextBox x:Name="Description" IsReadOnly="True"/>
+
+            <TextBlock Text="Expiry:" FontWeight="Bold"/>
+            <TextBox x:Name="Expiry" IsReadOnly="True"/>
+
+            <TextBlock Text="MilkType:" FontWeight="Bold"/>
+            <TextBox x:Name="MilkType" IsReadOnly="True"/>
+
+            <TextBlock Text="Weight:" FontWeight="Bold"/>
+            <TextBox x:Name="Weight" IsReadOnly="True"/>
+
+            <TextBlock Text="ManufactureIn:" FontWeight="Bold"/>
+            <TextBox x:Name="ManufactureIn" IsReadOnly="True"/>
+
+            <Button Content="Close" Click="ButtonCancel_Click" HorizontalAlignment="Center" Padding="5" Margin="10" Background="FloralWhite" TextElement.FontWeight="Bold"/>
+        </StackPanel>-->
+        <StackPanel Orientation="Vertical">
+            <GroupBox Header="Milk Detail" BorderThickness="2"   FontWeight="SemiBold" Margin="10" Background="#deb887">
+                <Grid Height="300" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="27.972"/>
+                        <ColumnDefinition Width="92.028"/>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="210"/>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="210"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0" Content="MilkId" HorizontalAlignment="Left" VerticalContentAlignment="Center" Grid.ColumnSpan="2" />
+                    <TextBlock Grid.Column="2" Grid.Row="0" x:Name="MilkId" Height="50"  TextWrapping="Wrap"  Margin="5,12,0,13"  Width="230" HorizontalAlignment="Left" Background="AliceBlue"/>
+                    <Label Grid.Column="3" Grid.Row="0" Content="Name" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <TextBlock Grid.Row="0" Grid.Column="4" x:Name="Name" Height="50"   Margin="0,12,0,13"  Width="200" HorizontalAlignment="Center" Background="AliceBlue" />
+                    <Label Grid.Column="5" Grid.Row="0" Content="Brand" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <TextBlock Grid.Column="6" Grid.Row="0" x:Name="Brand" Height="50"    Margin="0,12,0,13"  Width="200" HorizontalAlignment="Center" Background="AliceBlue"  />
+
+                    <Label Grid.Column="0" Grid.Row="1" Content="Weight" HorizontalAlignment="Left" VerticalContentAlignment="Center" Grid.ColumnSpan="2" />
+                    <TextBlock Grid.Column="2" Grid.Row="1" x:Name="Weight" Height="50"    Margin="5,13,0,12"  Width="230" HorizontalAlignment="Left" Background="AliceBlue" />
+                    <Label Grid.Column="3" Grid.Row="1" Content="MilkType" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <TextBlock Grid.Row="1" Grid.Column="4" x:Name="MilkType" Height="50"    Margin="0,13,0,12"  Width="200" HorizontalAlignment="Center" Background="AliceBlue" />
+                    <Label Grid.Column="5" Grid.Row="1" Content="Expiry" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <TextBlock Grid.Column="6" Grid.Row="1" x:Name="Expiry" Height="50"    Margin="0,13,0,12"  Width="200" HorizontalAlignment="Center" Background="AliceBlue" />
+
+                    <Label Grid.Column="0" Grid.Row="2" Content="Description" HorizontalAlignment="Left" VerticalContentAlignment="Center" Grid.ColumnSpan="2" />
+                    <TextBlock Grid.Column="2" Grid.Row="2" x:Name="Description" Height="50" TextWrapping="Wrap"   Margin="5,12,0,13"  Width="230" HorizontalAlignment="Left" Background="AliceBlue" />
+                    <Label Grid.Column="3" Grid.Row="2" Content="Price" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <TextBlock Grid.Row="2" Grid.Column="4" x:Name="Price" Height="50"   Margin="0,12,0,13"  Width="200" HorizontalAlignment="Center" Background="AliceBlue" />
+                    <Label Grid.Column="5" Grid.Row="2" Content="Discount" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <TextBlock Grid.Column="6" Grid.Row="2" x:Name="Discount" Height="50"   Margin="0,12,0,13"  Width="200" HorizontalAlignment="Center" Background="AliceBlue" />
+
+                    <Label Grid.Column="0" Grid.Row="3" Content="ManufactureIn" HorizontalAlignment="Left" VerticalContentAlignment="Center" Grid.ColumnSpan="2"  />
+                    <TextBlock Grid.Column="2" Grid.Row="3" x:Name="ManufactureIn" Height="50"   Margin="5,13,0,12"  Width="230" HorizontalAlignment="Left"  Background="AliceBlue" />
+                 
+                </Grid>
+
+            </GroupBox>
+            <Button Content="Cancel"  Background="#a9a9a9"  FontSize="15" Click="ButtonCancel_Click" HorizontalAlignment="Center" Padding="10" Margin="10"  TextElement.FontWeight="Bold" BorderBrush="Black" BorderThickness="1.8" />
+        </StackPanel>
+
+    </Grid>
+
+</Window>

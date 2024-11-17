@@ -1,0 +1,74 @@
+﻿<Window x:Class="MilkSt.WpfApp.UI.wCustomerDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:local="clr-namespace:MilkSt.WpfApp.UI"
+        mc:Ignorable="d"
+        Title="wCustomerDetail" Height="550" Width="1000" Background="LightSkyBlue" FontSize="20" FontFamily="arial">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <GroupBox Header="CustomerDetail  " Margin="10">
+                <Grid Height="400">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="94*"/>
+                        <RowDefinition Height="28*"/>
+                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="50*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="68"/>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="171"/>
+                        <ColumnDefinition Width="99"/>
+                        <ColumnDefinition Width="190"/>
+                        <ColumnDefinition Width="127"/>
+                        <ColumnDefinition Width="190"/>
+                        <ColumnDefinition Width="55"/>
+                        <ColumnDefinition Width="0*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Content="CustomerID :" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="135" Margin="23,110,0,31" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+                    <TextBlock Grid.Column="2" Grid.Row="0" Name="CustomerId" Margin="10,117,0,0"/>
+
+                    <Label Grid.Row="2" Content="Name :" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="77" Margin="66,0,0,0" Grid.ColumnSpan="2" />
+                    <TextBlock Grid.Column="2" Grid.Row="2" Name="Name" Margin="0,5,0,5"/>
+
+                    <Label Grid.Column="3" Grid.Row="2" Content="Address :" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="100" />
+                    <TextBlock Grid.Column="4" Grid.Row="2" Name="Address" Margin="10,5,15,5"/>
+
+                    <Label Grid.Column="5" Grid.Row="2" Content="FacebookId :" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="126" />
+                    <TextBlock Grid.Column="6" Grid.Row="2" Name="FacebookId" Margin="4,5,0,5"/>
+
+                    <Label Grid.Row="3" Content="Language :" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="113" Margin="30,20,0,20" Grid.RowSpan="3" Grid.ColumnSpan="2" />
+                    <TextBlock Grid.Column="2" Grid.Row="4" Name="Language" Margin="0,5,0,5" />
+
+                    <Label Grid.Column="3" Grid.Row="3" Content="Phone :" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="83" Margin="16,20,0,20" Grid.RowSpan="3" />
+                    <TextBlock Grid.Column="4" Grid.Row="4" Name="Phone" Margin="10,5,15,5"/>
+
+                    <Label Grid.Column="5" Grid.Row="3" Content="Email :" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="80" Margin="0,20,0,20" Grid.RowSpan="3" />
+                    <TextBlock Grid.Column="5" Grid.Row="4" Name="Email" Margin="80,5,0,5" Grid.ColumnSpan="2"/>
+
+                    <Label Grid.Row="6" Content="CustType :" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="105" Margin="33,0,0,0" Grid.ColumnSpan="2" />
+                    <TextBlock Grid.Column="2" Grid.Row="6" Name="CustType" Margin="0,5,10,5"/>
+
+                    <Label Grid.Column="3" Grid.Row="5" Content="Note :" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="68" Margin="31,18,0,2" Grid.RowSpan="2" />
+                    <TextBlock Grid.Column="4" Grid.Row="6" Name="Note" Margin="6,5,15,5"/>
+
+                    <Label Grid.Column="5" Grid.Row="5" Content="TotalSale :" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="104" Margin="0,18,0,2" Grid.RowSpan="2" />
+                    <TextBlock Grid.Column="5" Grid.Row="6" Name="TotalSale" Margin="109,5,0,5" Grid.ColumnSpan="2"/>
+
+                    <Button Grid.Row="0" Content="Close" Click="ButtonCancel_Click" HorizontalAlignment="Center" Padding="5" Margin="0,10,0,87" Background="FloralWhite" TextElement.FontWeight="Bold" Width="68"/>
+
+                </Grid>
+            </GroupBox>
+            <Image Source="https://thanhtienplastic.com/upload/12-23/tai-hinh-anh-bong-hoa-5-canh-vector.jpg" Height="83" Stretch="UniformToFill"/>
+        </StackPanel>
+    </Grid>
+
+
+</Window>
